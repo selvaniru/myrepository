@@ -1,0 +1,89 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=7, IE=9"/>
+    <meta name="viewport" content="width=device-width,user-scalable=no"/>
+    <!--The viewport meta tag is used to improve the presentation and behavior of the samples
+      on iOS devices-->
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1,user-scalable=no"/>
+
+    <title>Geometric Network</title>
+    
+    <link rel="stylesheet" href="https://js.arcgis.com/4.24/dijit/themes/nihilo/nihilo.css">
+    <link rel="stylesheet" href="https://js.arcgis.com/4.24/esri/themes/light/main.css"/>
+    <script src="https://js.arcgis.com/4.24/"></script>
+    <link rel="stylesheet" href="css/layout.css"/>
+    <link rel="stylesheet" href="css/button.css"/>
+    <script type="text/javascript">var dojoConfig = {async: true};</script>
+    <script type="text/javascript" src="js/config.js"></script>
+    <script type="text/javascript" src="js/helper.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>  
+</head>
+<body class="nihilo">
+  
+  <div id="header">
+    <p> Water Efficient Trissur- Water Network Tracing</p>
+    <!--<button id="signInBtn">Sign In</button>-->
+  </div>
+  <div id="btnsdiv" data-methodflw="">
+    <button id="resulthidden">></button>
+    <button id="btnAddEdge" type="button" ></button>
+    <button id="btnAddJunction" type="button"></button>
+    <button id="btnBarrierEdge" type="button"></button>
+    <button id="btnBarrierJunction" type="button"></button>
+     <!--<label for="traceSolverType">Trace task:</label>-->
+    <div id="traceSolverType"></div>
+    <!--<label for="methodFlow">Method flow:</label>-->
+    <!-- <div id="methodFlow"></div> -->
+    <!--<label for="flowElements">Flow Elements:</label>-->
+    <div id="flowElements" type="Select"></div>
+    <button id="btnDwn" type="button" ></button>
+    <button id="btnUps" type="button"></button> 
+    <button id="btnCon" type="button"></button>
+
+    <button id="btnSolve" type="button">Solve</button>
+    <div id="ddbClears" style=" display: inline-block">
+      <div id="mnuClear" data-dojo-type="dijit/Menu"></div>
+    </div>
+    <label for="geometricNetworks">Networks:</label>
+    <div id="geometricNetworks" style=" display: inline-block"></div>
+  </div>
+  <div class="container">
+    <div class="box" id="box1"style="overflow:scroll">
+
+      <div id="objectIdDiv"  style="text-align: center;">Trace Results</div>
+        <div class="loadercontainer" id="loaderContainer">Adding Results...
+          <div class="loader" style="display: inline-block;"></div>
+        </div>
+        <div id="newDiv">Edges</div>
+        <div id="displayEdges"></div>
+        <div id="newDiv2">Junctions</div>
+        <div id="displayJunctions"></div>
+
+      </div>
+
+    <div class="box" id="box2">
+      <!-- Content for the second div -->
+    
+      <div id="map" ></div>
+      
+    </div>
+  </div>
+        
+        
+       
+       
+          
+       
+        <div id="customAlert" class="modal">
+          <div class="modal-content"></div>
+        </div>
+       
+        
+
+
+</body>
+</html>
+
