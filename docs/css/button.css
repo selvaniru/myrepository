@@ -1,0 +1,237 @@
+
+
+
+
+/* 
+
+.barrierEdge
+{
+    background-image: url(../img/UtilityNetworkBarrierEdgeAddTool32.png);
+    background-size: 20px 20px;
+    width: 20px;
+    height: 20px;
+}
+.barrierJunction
+{
+    background-image: url(../img/UtilityNetworkBarrierJunctionAddTool32.png);
+    background-size: 20px 20px;
+    width: 20px;
+    height: 20px;
+}
+.addEdge
+{
+    background-image: url(../img/UtilityNetworkEdgeAddTool32.png);
+    background-size: 20px 20px;
+    width: 20px;
+    height: 20px;
+}
+.addJunction
+{
+    background-image: url(../img/UtilityNetworkJunctionAddTool32.png);
+    background-size: 20px 20px;
+    width: 20px;
+    height: 20px;
+}
+
+.solve
+{
+    background-image: url(../img/UtilityNetworkSolve32.png);
+    background-size: 20px 20px;
+    width: 20px;
+    height: 20px;
+} */
+
+/* .dwntrc
+{
+    background-image: url(../img/icons8-down.png);
+    background-size: 20px 20px;
+    width: 20px;
+    height: 20px;
+}
+
+.uptrc
+{
+    background-image: url(../img/icons8-up.png);
+    background-size: 20px 20px;
+    width: 20px;
+    height: 20px;
+}
+
+.conctd
+{
+    background-image: url(../img/conctd.png);
+    background-size: 20px 20px;
+    width: 20px;
+    height: 20px;
+} */
+
+
+
+.nihilo *
+{
+    outline: none;
+   
+}
+
+
+
+
+
+
+/* Styles for the custom alert */
+.modal {
+    display: none;
+    position: relative;
+    z-index: 1;
+    
+    width: 100%;
+    height: 100%;
+    overflow: 'overflow-x';
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: rgb(111, 240, 111);
+   
+    border: 1px solid  #f0efef;
+    width: 100%;
+
+}
+
+.loader {
+    width: 10px;
+    height: 10px;
+    margin: 0 auto;
+    border-top: 1px solid #292929;
+    border-right: 1px solid #efefef;
+    border-bottom: 1px solid #efefef;
+    border-left: 1px solid #efefef;
+    border-radius: 100px;
+    animation: spin 1s infinite linear;
+  }
+  
+  @keyframes spin {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+
+
+
+#resulthidden
+{
+
+ 
+    background-color: rgb(40, 13, 105);
+    width: 37px;
+    height: 38px;
+    padding: 1px;
+    cursor: pointer;
+    border: #000000;
+    color: white;
+ 
+  }
+
+
+  
+
+
+
+
+
+  #downloadbtn
+  {
+      background-image: url(../img/Download.png);
+      border-radius: 4px;
+      cursor: pointer;
+     padding: 2%;
+      border:none;
+      float: right;
+      width: 30px;
+      height: 23px;
+  }
+
+
+
+
+
+
+  .dropdown {
+    position: relative;
+}
+
+.dropbtn {
+    background-color: rgb(40, 13, 105);
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    max-height: 200px;
+
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+    overflow-y: auto;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    z-index: 9999;
+   
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: rgb(56, 16, 150);
+}
+
+
+.dropbtn{
+
+    line-height: 10px;
+}
+
+
+.btn,
+.dropbtn,
+.btn-group {
+    border-radius: 8px;
+    /* You can adjust the radius according to your preference */
+}
+
+.dropdown-content {
+    border-radius: 8px; /* Adjust as needed */
+}
+
+#btnsdiv {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+}
+
+@media (max-width: 600px) {
+    #btnsdiv {
+        flex-direction: column;
+    }
+}
+
+

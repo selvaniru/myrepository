@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Top Nav</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="navbar">
+    <a href="#" class="navbar-brand">
+      <img src="logo-ults.png" alt="Logo"class="logo-icon"> Water Efficient Trissur-Network Tracing
+    </a>
+    <div class="navbar-links">
+     
+      <li class="nav-item dropdown">
+        <label style="color: azure;" for="geometricNetworks">Networks:</label>
+        <div id="geometricNetworks" style="display: inline-block;"></div>
+      </li>
+      <a href="#">Home</a>
+      <a href="#">Product</a>
+      <a href="#">About Us</a>
+
+
+      <a href="#">
+        <img src="logo-ults.png" alt="Logo" width="80" height="60" class="logo-icon">
+      </a>
+    </div>
+    <button class="navbar-toggle" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+
+  <script>
+    function toggleMenu() {
+      document.querySelector('.navbar-links').classList.toggle('show');
+    }
+  </script>
+
+</body>
+</html>
